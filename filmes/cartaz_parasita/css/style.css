@@ -1,0 +1,166 @@
+#icon{
+    height: 32px;
+    width: 32px;
+}
+
+#cabecalho{
+    background-color: #333333;
+    padding-left: 24px;
+    padding-top: 8px;
+    height: 50px;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+#botao_home{
+    background-color: #333333;
+    border: none;
+    cursor: pointer;   
+}
+
+#site_icon{
+    margin-left: -120px;
+    width: 30px;
+    filter: invert(100%);
+}
+
+#titulo_pag{
+    font-family: 'Inter', sans-serif;
+    color: white;
+    margin-left: 60px;
+    margin-top: -22px;
+    font-size: 20px;
+}
+
+/* ==================================== M E I O =============================================== */
+
+#div_meio{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(../../../img/parasita_fundo.jpg);
+    background-size:cover;
+    padding: 1%;
+}
+
+#raw_meio{
+    height: 100%;
+}
+
+#cartaz{
+    width:auto;
+    margin-right: 1%;
+    
+}
+
+@media (max-width: 767px)
+{
+  #cartaz
+   {
+    display: block;
+    margin: 0 auto;
+   }
+}
+
+/* ============== I N F O   D O   F I L M E ============== */
+#titulo_filme{
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    color: white;
+}
+
+#class_indicativa{
+    height: 25px;
+    width: 25px;
+}
+
+#duracao_filme{
+    font-family: 'Inter', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+}
+
+#sinopse{
+    font-family: 'Inter', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    margin-top: 5px;
+    text-align: justify;
+    line-height: 0.55cm;
+}
+
+/* ============== I N F O   D O   F I L M E =============== */
+
+/* ============================================= F O O T E R ================================== */
+
+@media (max-width: 767px)
+{
+  #horarios
+   {
+    display: block;
+    margin-top: 20px;
+    margin: 0 auto;
+   }
+   #comprar_ingresso{
+    display: block;
+    position: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 529px;
+   }
+
+}
+
+@media (min-width: 768px)
+{
+  #horarios
+   {
+    display: block;
+    margin-left: 5%;
+   }
+   #comprar_ingresso{
+    margin-top: 20%;
+   }
+
+}
+
+#horarios{
+    margin-top: 5%;
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    background-color: #6d6d6d;
+    border-radius: 10px;
+    box-shadow: inset 0 0 10px;
+}
+
+#texto_horarios{
+    font-family: 'Inter', sans-serif;
+    color: aliceblue;
+    font-size: 24px;
+    line-height: 1.5cm;
+}
+
+
+#comprar_ingresso{  
+    
+    width: 50%;
+    height: 50%;
+    background-color: #ff0000;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition-duration: 0.1s;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    font-size: 24px;
+    box-shadow: 0 0px 30px 0px black;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    /* min-width: 529px; */
+}
+
+#comprar_ingresso:hover{
+    background-color: rgb(173, 2, 2);
+    border: 0px solid black;
+    color: black;
+}

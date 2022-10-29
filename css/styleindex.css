@@ -1,0 +1,252 @@
+/* FONTES */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+/* RESET STYLES */
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/* TIPOGRAFIA */
+
+html {
+	font-size: 16px;
+	background-color: #333;
+}
+
+body {
+	font-family: 'Inter', sans-serif;
+}
+
+#nome-cinema {
+	font-size: 1em;
+	color: white;
+}
+
+header {
+	background-color: #333;
+}
+
+#question {
+	font-size: 3em;
+	font-family: 'Montserrat';
+	color: white;	
+}
+
+.btn-cidade {
+	font-family: 'Montserrat';
+	font-size: 40px;	
+}
+
+#saiba-mais {
+	font-size: 20px;
+	color: white;
+}
+
+
+/* LAYOUT */
+
+body {
+	background-color: #333;
+}
+
+#logo {
+	width: 30px;
+	margin: 10px 0;
+	margin-right: 16px;
+	filter: invert(100%);
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1080px;
+	margin: 0 auto;
+	padding: 0 16px;
+}
+
+#logo-title {
+	display: flex;
+	align-items: center;
+}
+
+main {
+	background-color: #4A4A4A;
+}
+
+#question {
+	margin: 0 auto;
+	padding: 55px 16px;
+	text-align: center;
+}
+
+#selection-box {
+	max-width: 720px;
+	margin: 0 auto;
+	margin-bottom: 3em;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	border-radius: 10px;
+	background-color: #626262;
+	box-shadow: 0px 0px 2px #222;
+}
+
+.div-cidade {
+	width: 50%;
+	padding: 115px 0;
+	text-align: center;
+}
+
+#middle-bar {
+	color: #888;
+	background-color: #888;
+	height: 4em;
+	border-radius: 2em;
+	margin: 0 0.5em;
+}
+
+#middle-bar p {
+	visibility: hidden;
+}
+
+.btn-cidade {
+	text-align: center;
+	width:fit-content;
+	background-color: #62626200;
+	text-decoration: none;
+	color: white;
+}
+
+.btn-cidade:hover, .btn-cidade:focus {
+	color: black;
+	text-shadow: grey 2px 2px;
+	transition: .25s;
+	cursor: pointer;
+}
+
+#filler {
+	padding: 30px;
+}
+
+footer {
+	background-color:#333;
+	padding: 0 16px;
+}
+
+#saiba-mais, footer nav {
+    margin: 0 auto;
+    max-width: 1080px;
+}
+
+#saiba-mais {
+	padding: 1em 0;
+}
+
+footer nav {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 3em;
+}
+
+footer ul {
+	list-style-type: none;
+}
+
+footer li {
+	color: #AAA;
+	padding: .5em 0;
+}
+
+/* VIEWPORT DIMINUINDO */
+
+@media (max-width: 760px) {
+	#selection-box {
+		margin: 0 1em;
+		margin-bottom: 3em;
+	}
+}
+
+@media (max-width: 400px) {
+
+	#selection-box {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.div-cidade {
+		padding: 2em 0;
+		margin: 0 auto;
+		width: max-content;
+	}
+
+	#middle-bar {
+		height: 4px;
+		width: 64px;
+	}
+
+}
+
+@media (max-width: 330px) {
+	.div-cidade, .btn-cidade a {
+		width: min-content;
+	}
+
+	.left-items, .right-items {
+		padding: 0.5em 0;
+		margin: 0;
+	}
+	
+	#saiba-mais {
+		text-align: center;
+		padding-top: 1em;
+		margin: 0;
+	}
+
+	footer nav {
+		flex-direction: column;
+	}
+
+	footer ul {
+		text-align: center;
+	}
+	
+	footer .right-items {
+		text-align: center;
+	}
+}
+
+@media (max-width: 197px) {
+	header {
+		justify-content: center;
+	}
+	
+	#logo {
+		margin-left: 0;
+	}
+	
+	header {
+		align-items: center;
+	}
+
+}
+
+@media (max-width: 193px) {
+	#question {
+		font-size: 24px;
+		padding: 22px 8px;
+	}
+
+	.btn-cidade {
+		font-size: 16px;
+	}
+
+	#middle-bar {
+		width: 32px;
+	}
+}
